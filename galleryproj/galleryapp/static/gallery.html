@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Interactive Photo Gallery</h1>
+    <div class="gallery">
+        <img src="beagle.jpg" alt="Image 1" onclick="openModal(this)">
+        <img src="labrador.jpeg" alt="Image 2" onclick="openModal(this)">
+        <img src="germanshepherd.jpg" alt="Image 3" onclick="openModal(this)">
+        <img src="shitzu.jpg" alt="Image 4" onclick="openModal(this)">
+        <img src="goldenretriever.jpeg" alt="Image 5" onclick="openModal(this)">
+        <img src="bulldog.jpg" alt="Image 5" onclick="openModal(this)">
+        <img src="pomeranian.jpg" alt="Image 5" onclick="openModal(this)">
+        <img src="dog.jpg" alt="Image 5" onclick="openModal(this)">
+    </div>
+
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
